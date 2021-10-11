@@ -13,10 +13,10 @@ module.exports = {
 		return new MessageEmbed()
 			.setColor('#FF006E')
 			.setTitle('Loot Generator')
-			.addField('Label:', (result.formattedData.label != null) ? result.formattedData.label : '')
-			.addField('Quantity:', (result.formattedData.quantity != null) ? result.formattedData.quantity : '')
-			.addField('Items:', (result.formattedData.lootItems != null) ? result.formattedData.lootItems : '')
-			.addField('Source:', (result.source != null) ? result.source : '')
+			.addField('Label:', (result.formattedData.label != null) ? result.formattedData.label : '?')
+			.addField('Quantity:', (result.formattedData.quantity != null) ? result.formattedData.quantity : '?')
+			.addField('Items:', (result.formattedData.lootItems != null) ? result.formattedData.lootItems : '?')
+			.addField('Source:', (result.source != null) ? result.source : '?')
 			.setTimestamp()
 			.setFooter('Fantasy Content Generator');
 	},

@@ -1,5 +1,4 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageEmbed } = require('discord.js');
 const FCG = require('fantasy-content-generator');
 
 module.exports = {
@@ -17,15 +16,6 @@ module.exports = {
 			seed: interaction.options.getString('seed'),
 		});
 
-		return new MessageEmbed()
-			.setColor('#8338EC')
-			.setTitle('Name Generator')
-			.addFields(
-				{ name: 'Name:', value: result.formattedData.name },
-				{ name: 'Gender:', value: result.formattedData.gender },
-				{ name: 'Race:', value: result.formattedData.race },
-			)
-			.setTimestamp()
-			.setFooter('Fantasy Content Generator');
+		return interaction.reply(JSON.stringify(result));
 	},
 };

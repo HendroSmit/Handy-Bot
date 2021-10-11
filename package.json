@@ -1,0 +1,28 @@
+{
+  "name": "handy-bot",
+  "version": "1.0.0",
+  "description": "A very handy bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HendroSmit/Handy-Bot.git"
+  },
+  "author": "Hendro Smit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HendroSmit/Handy-Bot/issues"
+  },
+  "homepage": "https://github.com/HendroSmit/Handy-Bot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "0.1.0-canary.0",
+    "discord-api-types": "^0.23.1",
+    "discord.js": "^13.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  }
+}

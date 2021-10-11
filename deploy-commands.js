@@ -21,7 +21,7 @@ const rest = new REST({ version: '9' }).setToken(process.env.token);
 			{ body: commands },
 		);
 
-		console.log('Current commands\n' + commands);
+		console.log('Current commands\n' + JSON.stringify(commands));
 
 		console.log('Successfully reloaded application (/) commands.');
 	}

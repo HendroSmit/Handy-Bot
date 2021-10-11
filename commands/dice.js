@@ -27,6 +27,6 @@ module.exports = {
 		// Roll the dice
 		const result = roll.roll(input);
 
-		return interaction.reply({ content: `Rolling \`${input}\` : \`${result}\``, ephemeral: whisper });
+		return interaction.reply({ content: `Rolling \`${input}\` : \`${result.rolled}\``, ephemeral: whisper });
 	},
 };

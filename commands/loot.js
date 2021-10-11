@@ -19,6 +19,6 @@ module.exports = {
 				{ name: 'Source:', value: result.source },
 			)
 			.setTimestamp()
-			.setFooter('Fantasy Content Generator', 'https://github.com/thomascgray/fantasy-content-generator');
+			.setFooter('Fantasy Content Generator');
 	},
 };

@@ -30,6 +30,6 @@ module.exports = {
 				{ name: 'Relations:', value: JSON.stringify(result.formattedData.relations) },
 			)
 			.setTimestamp()
-			.setFooter('Fantasy Content Generator', 'https://github.com/thomascgray/fantasy-content-generator');
+			.setFooter('Fantasy Content Generator');
 	},
 };

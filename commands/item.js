@@ -21,6 +21,6 @@ module.exports = {
 				{ name: 'Effects:', value: JSON.stringify(result.effects) },
 			)
 			.setTimestamp()
-			.setFooter('Fantasy Content Generator', 'https://github.com/thomascgray/fantasy-content-generator');
+			.setFooter('Fantasy Content Generator');
 	},
 };

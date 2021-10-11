@@ -14,6 +14,6 @@ module.exports = {
 			.setTitle('Story Hook Generator')
 			.setDescription(result.storyhook)
 			.setTimestamp()
-			.setFooter('Fantasy Content Generator', 'https://github.com/thomascgray/fantasy-content-generator');
+			.setFooter('Fantasy Content Generator');
 	},
 };

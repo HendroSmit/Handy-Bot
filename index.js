@@ -22,10 +22,6 @@ for (const file of commandFiles) {
 	client.commands.set(command.data.name, command);
 }
 
-client.once('ready', () => {
-	console.log('Ready!');
-});
-
 client.on('interactionCreate', async interaction => {
 	if (!interaction.isCommand()) return;
 

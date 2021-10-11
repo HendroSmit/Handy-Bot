@@ -1,4 +1,5 @@
-const { SlashCommandBuilder, MessageEmbed } = require('@discordjs/builders');
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
 const FCG = require('fantasy-content-generator');
 
 module.exports = {

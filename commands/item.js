@@ -13,14 +13,12 @@ module.exports = {
 		return new MessageEmbed()
 			.setColor('#FB5607')
 			.setTitle('Magic Item Generator')
-			.addFields(
-				{ name: 'Title:', value: result.formattedData.title },
-				{ name: 'Type:', value: result.type, inline: true },
-				{ name: 'Subtype:', value: result.subtype },
-				{ name: 'Power Level:', value: result.powerLevel, inline: true },
-				{ name: 'School of Magic:', value: result.schoolOfMagic },
-				{ name: 'Effects:', value: JSON.stringify(result.effects) },
-			)
+			.addField('Title:', (result.formattedData.title != null) ? result.formattedData.title : '')
+			.addField('Type:', (result.type != null) ? result.type : '', true)
+			.addField('Subtype:', (result.subtype != null) ? result.subtype : '')
+			.addField('Power Level:', (result.powerLevel != null) ? result.powerLevel : '', true)
+			.addField('School of Magic:', (result.schoolOfMagic != null) ? result.schoolOfMagic : '')
+			.addField('Effects:', (result.effects != null) ? JSON.stringify(result.effects) : '')
 			.setTimestamp()
 			.setFooter('Fantasy Content Generator');
 	},

@@ -16,6 +16,9 @@ module.exports = {
 			input = 'd20';
 		}
 
+		// Strip whitespace for user ease of use
+		input = input.split(' ').join('');
+
 		// Get whisper option from user
 		let whisper = interaction.options.getBoolean('whisper');
 
@@ -27,6 +30,6 @@ module.exports = {
 		// Roll the dice
 		const result = roll.roll(input);
 
-		return interaction.reply({ content: `Rolling \`${input}\` : \`${result.rolled}\``, ephemeral: whisper });
+		return interaction.reply({ content: `Rolling \`${input}\` : \`${result.result} [${result.rolled}]\``, ephemeral: whisper });
 	},
 };

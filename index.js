@@ -1,5 +1,12 @@
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable no-mixed-spaces-and-tabs */
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
+
+const Agenda = require('agenda');
+module.exports.agenda = new Agenda({
+	db: { address: 'localhost:27017/agenda-test', collection: 'agendaJobs' },
+});
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
@@ -37,5 +44,19 @@ client.on('interactionCreate', async interaction => {
 		return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
 	}
 });
+
+// Define jobs for scheduling reminders
+this.agenda.define(
+	'Reminder',
+	{ priority: 'high', concurrency: 10 },
+	async (job) => {
+	  const { to } = job.attrs.data;
+	  const { message } = job.attrs.data;
+	  const channel = client.channels.cache.get(to);
+	  await channel.send(message);
+	},
+);
+
+this.agenda.start();
 
 client.login(process.env.token);

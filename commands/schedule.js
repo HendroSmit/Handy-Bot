@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { agenda } = require('../Agenda');
+const { agenda } = require('../index');
 
 module.exports = {
 	data: new SlashCommandBuilder()

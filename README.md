@@ -63,6 +63,7 @@ The following / commands are registered with the following syntax
 ![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 ![Issues Open](https://img.shields.io/github/issues/HendroSmit/Handy-Bot.svg)
 ![Issues Closed](https://img.shields.io/github/issues-closed/HendroSmit/Handy-Bot.svg)
+![Issues Closed](https://img.shields.io/github/commits-since/HendroSmit/Handy-Bot/v1.0.0.svg)
 
 
 ## Room for Improvement

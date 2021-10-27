@@ -2,9 +2,9 @@
 
 ![Handy Bot Logo](Handy_Bot.png)
 
-```
-A general purpose Discord bot with an expanding list of features. Handy Bot builds a solid platform for making and extending your own Discord.js bot that can be hosted for free using Heroku on a Nodejs server.
-```
+
+> A general purpose Discord bot with an expanding list of features. Handy Bot builds a solid platform for making and extending your own Discord.js bot that can be hosted for free using Heroku on a Nodejs server.
+
 
 ## Table of Contents
 - [Handy Bot](#handy-bot)
